@@ -1,3 +1,9 @@
+/* This font face used for h2 below */
+@font-face {
+    font-family: asphalts;
+    src: url('asphalts.otf'); 
+    }
+
 html, body, mountainoutline {
 	margin: 0;
 	padding: 0;
@@ -17,7 +23,8 @@ html, body, mountainoutline {
 h1 {
 	font-family: 'Lato', sans-serif;
 	font-size: 100px;
-	/* color: #99ffcc; */
+	color: #99ffcc;
+	/* Current gradient code will only work on webkit ... needs fixing */
 	background: -webkit-linear-gradient(#fff, #009999);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -30,17 +37,19 @@ h1 {
 }
 
 h2 {
-	font-size: 100px;
+	font-size: 130px;
 	/* font-family: 'Yesteryear', cursive; */
-	font-family: 'Caveat', cursive;
+	/* font-family: 'Caveat', cursive; */
+	font-family: asphalts;
+	letter-spacing: 6px;
 	color: #ff0000;
 	position: absolute;
 	margin-top: 0;
-	top: 180px;
-	left: 50%;
+	top: 190px;
+	left: 55%;
 	transform: translate(-50%, 0); 
 	z-index: 2;
-	-ms-transform: rotate(345deg); 
-    -webkit-transform: rotate(345deg); 
-    transform: rotate(345deg);
+	-ms-transform: rotate(348deg); 
+    -webkit-transform: rotate(348deg); 
+    transform: rotate(350deg);
 }

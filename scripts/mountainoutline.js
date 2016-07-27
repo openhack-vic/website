@@ -63,6 +63,7 @@
             context.fillStyle = "rgb(0, 0, 0)";
             context.fill();
 			
+			// draw outline for top of mountain
 			context.beginPath();
 			context.moveTo(0, height / 2);
 			
